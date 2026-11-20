@@ -13,4 +13,4 @@ M118 Plate bed temp: [bed_temperature_initial_layer_single]
 {endif}
 SET_GCODE_OFFSET Z={total_offset}
 RESPOND MSG="Plate : {curr_bed_type} | Filament : {filament_type[0]} | Offset : {total_offset}"
-PRINT_START BED_TEMP=[bed_temperature_initial_layer_single] EXTRUDER_TEMP=[nozzle_temperature_initial_layer] AREA_START={first_layer_print_min[0]},{first_layer_print_min[1]} AREA_END={first_layer_print_max[0]},{first_layer_print_max[1]} BED_HEAT_SOAK_MINUTES=0 BED_MESH=adaptive PURGE_LENGTH=50 PURGE_AMOUNT=24 PURGE_FLOW_RATE=6 PURGE_RETRACT=0.8 PURGE_UNRETRACT=0.7
+PRINT_START BED_TEMP=[bed_temperature_initial_layer_single] EXTRUDER_TEMP=[nozzle_temperature_initial_layer] PROBE_TEMP=160 PROBE_HEAT_SOAK_MINUTES=3 BED_HEAT_SOAK_MINUTES=0 BED_MESH=adaptive KAMP_PARK=disabled RIGHT_PURGE=disabled LEFT_PURGE=enabled TEMP_Z_OFFSET_BOTTOM=60 TEMP_Z_OFFSET_TOP=160 TEMP_Z_OFFSET_HEIGHT=0.09
